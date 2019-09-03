@@ -1,45 +1,50 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import PostPreview from "../components/PostPreview"
+import Layout from "../components/Layout"
 
 import SEO from "../components/seo"
+import "./index.scss"
 
 const IndexPage = ({ data }) => (
   <>
   <SEO title="Home" />
-  <section>
-    <h3>The virtual home of</h3>
-    <h1>Rabea Gleissner</h1>
-    <p>A place to share what I've been learning and making.</p>
-    <ul>
-      <li>
-        <Link to="/blog-index/">Blog posts</Link>
-      </li>
-      <li>
-        <Link to="/til-index/">Today I learnt</Link>
-      </li>
-      <li>
-        <Link to="/projects-index/">Projects</Link>
-      </li>
-      <li>
-        <Link to="/about-me/">About me</Link>
-      </li>
-    </ul>
-    <ul>
-      <li>Github</li>
-      <li>Twitter</li>
-      <li>LinkedIn</li>
-    </ul>
-  </section>
-  <section>
-    <div>
-      <h1>Things I wrote</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostPreview  node={node} />
-      ))}
+  <Layout>
+    <div className="home">
+      <header>
+        <section className="about">
+          <h3>The virtual home of</h3>
+          <h1>Rabea Gleissner</h1>
+          <p>A place to share what I've been learning and making.</p>
+          <ul>
+            <li>
+              <Link to="/blog-index/">Blog posts</Link>
+            </li>
+            <li>
+              <Link to="/til-index/">Today I learnt</Link>
+            </li>
+            <li>
+              <Link to="/about-me/">About me</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>Github</li>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </section>
+      </header>
+      <section className="writings">
+        <div>
+          <h1>Things I wrote</h1>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <PostPreview  node={node} />
+          ))}
+        </div>
+        <div className="read-more">Read more <Link to="/til-index/">Today I learnt</Link> or <Link to="/blog-index/">Blog posts</Link></div>
+      </section>
     </div>
-    <h3>Read more <Link to="/til-index/">Today I learnt</Link> or <Link to="/blog-index/">Blog posts</Link></h3>
-  </section>
+  </Layout>
   </>
 )
 export const query = graphql`

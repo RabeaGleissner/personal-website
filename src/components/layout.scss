@@ -1,0 +1,12 @@
+.wrapper {
+  overflow: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content {
+  max-width: 960px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: auto;
+}
