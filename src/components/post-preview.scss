@@ -1,7 +1,35 @@
+@import '../pages/common';
+
 .post-preview {
-  margin-left: 240px;
+  margin-left: 280px;
   border-bottom: 2px dashed #eee;
   padding: 20px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.post-preview-title {
+  margin-bottom: 10px;
+}
+
+.post-preview-meta {
+  font-size: .8em;
+  display: flex;
+}
+
+.post-preview-badge {
+  line-height: 1.2em;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.post-preview-blog-badge {
+  background-color: $blogBadge;
+  width: 20px;
+  padding: 2px 5px;
+}
+
+.post-preview-til-badge {
+  background-color: $tilBadge;
+  width: 27px;
 }

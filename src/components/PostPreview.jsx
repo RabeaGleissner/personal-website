@@ -4,14 +4,26 @@ import { Link } from "gatsby"
 import "./post-preview.scss"
 
 const PostPreview = ({ node }) => {
-  const { path, title, date } = node.frontmatter
+  const { path, title, date, tags = [] } = node.frontmatter
+  console.log('tags', tags);
+
+  const isTil = tags.includes('til')
+  const isBlog = tags.includes('blog')
+
   return (
     <article key={node.id} className="post-preview">
-      <h3>
+      <h2 className="post-preview-title">
         <Link to={path}>{title}</Link>
-        <span> — {date}</span>
-      </h3>
+      </h2>
+      <div className="post-preview-meta">
+        <div className="post-preview-date">{date}</div>
+        {isTil && <div className="post-preview-badge post-preview-til-badge">TIL</div>}
+        {isBlog && <div className="post-preview-badge post-preview-blog-badge">Blog</div>}
+      </div>
       <p>{node.excerpt}</p>
+      <p>
+        <Link to={path}>Read more</Link>
+      </p>
     </article>
   )
 }

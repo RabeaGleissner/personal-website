@@ -8,11 +8,6 @@ const Layout = ({ children }) => {
     <>
       <div className="wrapper">
         <main className="content">{children}</main>
-        <footer>
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="https://github.com/RabeaGleissner/gatsby-blog">View source</a>
-        </footer>
       </div>
     </>
   )

@@ -1,0 +1,29 @@
+.homepage-header {
+  border-right: 2px dashed #eee;
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  top: 0px;
+}
+
+.homepage-header-about {
+  text-align: right;
+}
+
+.homepage-header-nav {
+  li {
+    list-style: none;
+  }
+}
+
+.homepage-header-social-links {
+  li {
+    list-style: none;
+  }
+}
