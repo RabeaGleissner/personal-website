@@ -14,7 +14,13 @@
 
 .post-preview-meta {
   font-size: .8em;
+  align-items: baseline;
   display: flex;
+  a,
+  a:hover
+  {
+    border-bottom: none;
+  }
 }
 
 .post-preview-badge {
@@ -25,11 +31,12 @@
 
 .post-preview-blog-badge {
   background-color: $blogBadge;
-  width: 20px;
-  padding: 2px 5px;
+  width: 42px;
+  padding: 0 5px;
 }
 
 .post-preview-til-badge {
   background-color: $tilBadge;
-  width: 27px;
+  width: 31px;
+  padding: 0 4px;
 }

@@ -17,9 +17,15 @@ const PostPreview = ({ node }) => {
       </h2>
       <div className="post-preview-meta">
         <div className="post-preview-date">{date}</div>
-        {isTil && <div className="post-preview-badge post-preview-til-badge">TIL</div>}
-        {isBlog && <div className="post-preview-badge post-preview-blog-badge">Blog</div>}
-      </div>
+        {isTil &&
+            <Link to="/til-index">
+              <div className="post-preview-badge post-preview-til-badge">TIL</div>
+            </Link>}
+        {isBlog &&
+            <Link to="/blog-index">
+              <div className="post-preview-badge post-preview-blog-badge">Blog</div>
+            </Link>}
+          </div>
       <p>{node.excerpt}</p>
       <p>
         <Link to={path}>Read more</Link>
