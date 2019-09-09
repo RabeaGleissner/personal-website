@@ -8,7 +8,7 @@ const HomepageHeader = () => {
     <header className="homepage-header">
       <section className="homepage-header-about">
         <h3>The virtual home of</h3>
-        <h1>Rabea Gleissner</h1>
+        <h1 className="homepage-header-title">Rabea Gleissner</h1>
         <p>A place to share what I've been learning and making.</p>
         <nav className="homepage-header-nav">
           <ul>
