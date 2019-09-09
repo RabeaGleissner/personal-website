@@ -1,29 +1,22 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import PostPreview from "../components/PostPreview"
+import Layout from "../components/Layout"
+
+import './article-index.scss'
 
 export default ({ data }) => {
   return (
-    <>
-    <div>
-      <h1>Today I learnt</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostPreview  node={node} />
-      ))}
-    </div>
-    </>
-  )
-}
-
-const PostPreview = ({ node }) => {
-  const { path, title, date } = node.frontmatter
-  return (
-    <div key={node.id}>
-      <h3>
-        <Link to={path}>{title}</Link>
-        <span> — {date}</span>
-      </h3>
-      <p>{node.excerpt}</p>
-    </div>
+    <Layout>
+      <div className="article-index">
+        <header className="article-index-header">
+          <h1 className="article-index-title article-index-title-til">Today I learnt</h1>
+        </header>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <PostPreview node={node} />
+        ))}
+      </div>
+    </Layout>
   )
 }
 
@@ -40,7 +33,7 @@ export const query = graphql`
           frontmatter {
             title
             path
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
           }
           excerpt
         }

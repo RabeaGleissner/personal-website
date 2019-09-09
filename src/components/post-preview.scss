@@ -1,11 +1,13 @@
 @import '../pages/common';
 
 .post-preview {
-  margin-left: 280px;
   border-bottom: 2px dashed #eee;
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  &.homepage {
+    margin-left: 280px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .post-preview-title {
@@ -30,13 +32,13 @@
 }
 
 .post-preview-blog-badge {
-  background-color: $blogBadge;
+  background-color: $blogColour;
   width: 42px;
   padding: 0 5px;
 }
 
 .post-preview-til-badge {
-  background-color: $tilBadge;
+  background-color: $tilColour;
   width: 31px;
   padding: 0 4px;
 }

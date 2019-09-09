@@ -6,7 +6,15 @@
 
 .content {
   max-width: 960px;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 10px 30px;
   margin: auto;
+}
+
+.home-link {
+  position: relative;
+  margin-bottom: 40px;
+  a {
+    position: absolute;
+    right: 20px;
+  }
 }

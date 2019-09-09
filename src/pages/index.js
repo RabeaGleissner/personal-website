@@ -10,14 +10,14 @@ import "./index.scss"
 const IndexPage = ({ data }) => (
   <>
   <SEO title="Home" />
-  <Layout>
+  <Layout isHome>
     <div className="home">
       <HomepageHeader />
       <section className="writings">
         <div>
           <h1>Things I wrote</h1>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <PostPreview  node={node} />
+            <PostPreview extraClasses="homepage" node={node} />
           ))}
         </div>
         <div className="read-more">Read more <Link to="/til-index/">Today I learnt</Link> or <Link to="/blog-index/">Blog posts</Link></div>
@@ -44,7 +44,7 @@ export const query = graphql`
           frontmatter {
             title
             path
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
             tags
           }
           excerpt

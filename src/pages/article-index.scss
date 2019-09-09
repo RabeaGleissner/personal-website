@@ -1,0 +1,32 @@
+@import './common.scss';
+
+.article-index-header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.article-index-title {
+  &:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: table;
+    top: 13px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 12px 208px;
+  }
+}
+
+.article-index-title-blog {
+  &:after {
+    border-color: transparent transparent transparent $blogColour;
+  }
+}
+.article-index-title-til {
+  &:after {
+    border-color: transparent transparent transparent $tilColour;
+  }
+}

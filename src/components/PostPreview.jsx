@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import "./post-preview.scss"
 
-const PostPreview = ({ node }) => {
+const PostPreview = ({ node, extraClasses }) => {
   const { path, title, date, tags = [] } = node.frontmatter
   console.log('tags', tags);
 
@@ -11,7 +11,7 @@ const PostPreview = ({ node }) => {
   const isBlog = tags.includes('blog')
 
   return (
-    <article key={node.id} className="post-preview">
+    <article key={node.id} className={`post-preview ${extraClasses}`}>
       <h2 className="post-preview-title">
         <Link to={path}>{title}</Link>
       </h2>
