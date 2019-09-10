@@ -1,7 +1,7 @@
 @import '../pages/common.scss';
 
 .homepage-header {
-  border-right: 2px dashed #eee;
+  border-right: 2px dashed $layoutBorderColour;
   position: fixed;
   width: 282px;
   height: 100%;

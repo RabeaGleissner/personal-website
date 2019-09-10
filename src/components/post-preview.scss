@@ -1,7 +1,7 @@
 @import '../pages/common';
 
 .post-preview {
-  border-bottom: 2px dashed #eee;
+  border-bottom: 2px dashed $layoutBorderColour;
   &.homepage {
     margin-left: 282px;
     padding: 20px;
