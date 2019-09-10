@@ -3,9 +3,9 @@
 .homepage-header {
   border-right: 2px dashed #eee;
   position: fixed;
-  width: 280px;
+  width: 282px;
   height: 100%;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
@@ -26,12 +26,12 @@
     z-index: -1;
     content: '';
     display: table;
-    top: 83px;
-    right: -11px;
+    top: 86px;
+    right: -8px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 40px 180px 10px 0;
+    border-width: 14px 267px 15px 0;
     border-color: transparent $homeTriangleColour transparent transparent;
   }
 }
