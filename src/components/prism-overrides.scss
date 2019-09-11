@@ -1,0 +1,14 @@
+@import '../pages/common';
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: .9em;
+  background-color: $codeBackgroundColour;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: $codeBackgroundColour;
+}

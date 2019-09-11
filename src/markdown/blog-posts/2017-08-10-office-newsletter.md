@@ -41,14 +41,3 @@ Enrique usually proof-reads the text on a Thursday morning although I've just re
 ## A Mailchimp hickup
 
 As I said before, Mailchimp works really well. We only had a bit of a hick up with them once, where they locked our account because their bot detected a violation of their terms and conditions. Except that they never told us what exactly it was that we did that violated the Ts & Cs. We emailed them straight away to ask what we had done wrong but didn’t hear back from them for weeks. During that time we just sent the newsletter out through Gmail. They finally replied after Enrique had had enough and wrote them a strongly worded email. They ask us a load of questions like what we were selling (nothing) or did our customers agree to receive those emails (errr… no customers involved). So once that was all cleared up, they unlocked our account again. Let’s hope this doesn’t happen again! We’re still not sure what exactly it was that the bot detected in our emails, so we’ll just carry on as before.
-
-
-
-
-
-
-
-
-
-
-

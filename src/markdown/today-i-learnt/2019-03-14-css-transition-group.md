@@ -15,7 +15,7 @@ It tracks when an element enters or exists the DOM and you can specify to animat
 
 To use it, the elements that should be animated, need to be children of the ReactCSSTransitionGroup component. And the properties of the component allow you to specify how you want to animate the child elements. For examples something like this:
 
-```
+```css
 transitionEnterTimeout={300}
 transitionLeaveTimeout={250}
 ```

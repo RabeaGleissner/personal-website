@@ -25,12 +25,11 @@ Use the command `vagrant init` which will create a Vagrantfile with loads of com
 Vagrant is written in Ruby, so the Vagrantfile is also Ruby.
 It starts like this:
 
-<pre><code class="language-ruby">
+```ruby
 Vagrant.configure("2") do |config|
   ...
 end
-
-</code></pre>
+```
 
 “2” is the version. Supported versions are 1 and 2 currently. And inside that loop we can start specifying which box we want to use.
 I originally started with the box that the tutorial by hashicorp suggested: `hashicorp/precise64`
@@ -39,46 +38,44 @@ However I ended up having loads of problems further down the line when I tried t
 
 So the Vagrant file looks like this now:
 
-<pre><code class="language-ruby">
+```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
 end
-
-</code></pre>
+```
 
 I also added a line to forward ports to my local machine. So if I run a server on a port on localhost in my Vagrant box, I can then open the browser on my own laptop and look at that port on localhost.
 
-<pre><code class="language-ruby">
+```ruby
 config.vm.network "forwarded_port", guest: 4000, host: 4000, host_ip: "127.0.0.1"
+```
 
-</code></pre>
 
 Then I specified two more bits of configuration, that I’m asking Vagrant to do. One contains commands that are run from the shell and one through Ansible.
 
 I had some trouble setting the correct locale for using Elixir and therefore had to specifically set it. That’s what I’m doing in the shell provisioning code snippet below.
 
-<pre><code class="language-ruby">
+```ruby
   config.vm.provision :shell, :inline => <<-EOT
      echo LANG="en_US.utf8" > /etc/default/locale
      echo LANGUAGE="en_US:" >> /etc/default/locale
      echo LC_ALL="en_US.UTF-8" >> /etc/default/locale
   EOT
 
-</code></pre>
+```
 
 And then I’m asking Vagrant to look at the Ansible playbook file to set up the virtual machine with all the languages and tools that I need. That's where the meat of the setup is really. I intend to write a separate blog post about it later.
 
-<pre><code class="language-ruby">
+```ruby
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "setup/playbook.yml"
   end
 
-
-</code></pre>
+```
 
 And that's all there is to my Vagrant file for now. 
 
-<pre><code class="language-ruby">
+```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "forwarded_port", guest: 4000, host: 4000, host_ip: "127.0.0.1"
@@ -94,8 +91,7 @@ Vagrant.configure("2") do |config|
   end
 end
 
-
-</code></pre>
+```
 
 The bare minimum to setup a Vagrant machine and run it, is even less code. It would be sufficient to only have one line in the configure block, which is the one that specifies which box to use.
 
@@ -114,6 +110,3 @@ And then it would already be possible to access the Vagrant box. Which brings me
 `vagrant status` - shows you if the VM is running
 
 `vagrant global-status` - shows you all the VMs you have running on your laptop
-
-
-

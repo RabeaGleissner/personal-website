@@ -9,7 +9,7 @@ I had this code for adding a proposed candidate to our store of supply requests.
 And I needed to add a new key to the second argument - but only if it existed.
 The new key was `infoForSchool`.
 
-```
+```javascript
 await supplyRequestStore.addProposedCandidate(supplyRequestId, {
 		candidateId,
 		chargeRateEstimate,
@@ -21,17 +21,17 @@ await supplyRequestStore.addProposedCandidate(supplyRequestId, {
 Instead of creating the default object and maybe merging in the `infoForSchool` if it existed and then adding the object to the function, modern JavaScript allows you to do it all in line.
 Mind === blown.
 
-```
+```javascript
 await supplyRequestStore.addProposedCandidate(supplyRequestId, {
-		candidateId,
-		chargeRateEstimate,
-    ...infoForSchool && { infoForSchool },
-		});
+  candidateId,
+  chargeRateEstimate,
+  ...infoForSchool && { infoForSchool },
+});
 ```
 
 And you can do the same for arrays, also using the spread operator.
 
-```
+```html{numberLines: true}
   <Tabs
     content={[
       ...(candidate.infoForSchool ? [{

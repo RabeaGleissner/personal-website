@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import "./layout.scss"
+import "./prism-overrides.scss"
 
 const Layout = ({ children, isHome }) => {
   return (

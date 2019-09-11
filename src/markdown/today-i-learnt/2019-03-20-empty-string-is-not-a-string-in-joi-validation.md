@@ -9,7 +9,7 @@ Weâ€™re using [Joi validation](https://github.com/hapijs/joi) to ensure that weâ
 
 I had created a new field which was a string, so I added this to the validation:
 
-```
+```javascript
 validate({
   body: Joi.object({
    // some other stuff

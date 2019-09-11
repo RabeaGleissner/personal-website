@@ -5,7 +5,6 @@ import "./post-preview.scss"
 
 const PostPreview = ({ node, extraClasses }) => {
   const { path, title, date, tags = [] } = node.frontmatter
-  console.log('tags', tags);
 
   const isTil = tags.includes('til')
   const isBlog = tags.includes('blog')

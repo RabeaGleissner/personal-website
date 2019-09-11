@@ -45,7 +45,8 @@ But still, when looking at the documentation and examples, I felt pretty overwhe
 
 You need an entry point to tell webpack where to start running through your files. And you also need an output path to tell webpack where to place the processed file. Then come the loaders, which are basically little build tasks that can do different stuff to your code. In this most basic example I’m just using babel-loader to transpire my React/ES6 code.
 
-<pre><code class="language-javascript">
+
+```javascript
 // webpack.config.js
 
 const path = require('path')
@@ -68,13 +69,14 @@ const config = {
 
 module.exports = config
 
-</code></pre>
+```
 
 I find the `test` property a bit confusing. At first I thought this had to do with unit testing. But it doesn’t! This property is where you specify for which files the loader should be responsible. So I guess when it looks at a file, it first “tests” if it is the correct file before it applies the loader processing.
 
 In the webpack 1 config file you need to specify which presets you want to use for Babel. But I couldn’t find an example for this in the webpack 2 config file. Finally I realized that I needed to add a specific Babel config file, which specifies which presets to use.
 
-<pre><code class="language-javascript">
+```javascript
+
 // .babelrc
 
 {
@@ -83,8 +85,7 @@ In the webpack 1 config file you need to specify which presets you want to use f
   ]
 }
 
-
-</code></pre>
+```
 
 And now I can run the `webpack` command and it does its magic.
 

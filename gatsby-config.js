@@ -5,7 +5,6 @@ module.exports = {
     author: `Rabea Gleissner`,
   },
   plugins: [
-    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -21,6 +20,23 @@ module.exports = {
         name: `tilSnippets`,
         path: `${__dirname}/src/markdown/today-i-learnt`,
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            }
+          }
+        ]
+      }
     },
   ],
 }
