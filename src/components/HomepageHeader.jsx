@@ -13,13 +13,13 @@ const HomepageHeader = () => {
         <nav className="homepage-header-nav">
           <ul>
             <li>
-              <Link to="/blog-index/">Blog posts</Link>
+              <Link to="/about-me/">About me</Link>
             </li>
             <li>
               <Link to="/til-index/">Today I learnt</Link>
             </li>
             <li>
-              <Link to="/about-me/">About me</Link>
+              <Link to="/blog-index/">Blog posts</Link>
             </li>
           </ul>
         </nav>
