@@ -5,15 +5,20 @@
 }
 
 .article {
-  padding: 0 30px;
   margin-bottom: 40px;
-  border-right: 2px dashed $layoutBorderColour;
-  border-left: 2px dashed $layoutBorderColour;
-  &.til-article {
-    border-color: $tilColour;
-  }
-  &.blog-article {
-    border-color: $blogColour;
+}
+
+@media only screen and (min-width:750px) {
+  .article {
+    padding: 0 30px;
+    border-right: 2px dashed $layoutBorderColour;
+    border-left: 2px dashed $layoutBorderColour;
+    &.til-article {
+      border-color: $tilColour;
+    }
+    &.blog-article {
+      border-color: $blogColour;
+    }
   }
 }
 

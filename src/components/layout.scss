@@ -6,8 +6,14 @@
 
 .content {
   max-width: 970px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin: auto;
+}
+
+@media only screen and (min-width:750px) {
+  .content {
+    padding: 10px 30px;
+  }
 }
 
 .home-link {

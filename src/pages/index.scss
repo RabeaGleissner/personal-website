@@ -59,23 +59,26 @@ a {
   }
 }
 
-.home {
-  display: flex;
-  padding: 20px;
+.read-more {
+  font-weight: 700;
+  margin-top: 20px;
 }
 
-.writings {
-  h1, .read-more, footer {
-    margin-left: 280px;
-    padding-left: 30px;
-  }
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
 
-  footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
+@media only screen and (min-width:750px) {
+  .home {
+    display: flex;
+    padding: 20px;
   }
-  .read-more {
-    font-weight: 700;
-    margin-top: 20px;
+  .writings {
+    h1, .read-more, footer {
+      margin-left: 280px;
+      padding-left: 30px;
+    }
   }
 }
+
