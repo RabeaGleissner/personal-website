@@ -7,7 +7,7 @@ def create(header, custom_date='')
 date: \"#{date}\"
 title: \"#{header}\"
 path: \"\/til\/#{kebab_header}\"
-tags:[\"til\"]
+tags: [\"til\"]
 ---
 ")
 end
