@@ -11,4 +11,4 @@ I thought it would be interesting to share my experience with those tools, so I 
 
 <!--break-->
 
-Here's [the blog post](https://engineering.tes.com/post/remote-pair-programming-tools/).
+[Read the post on the Tes engineering blog](https://engineering.tes.com/post/remote-pair-programming-tools/).

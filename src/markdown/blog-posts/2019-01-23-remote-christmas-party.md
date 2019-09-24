@@ -13,4 +13,4 @@ I have to say that I am surprised just how possible it is to make personal conne
 They are great colleagues and I really enjoy their company.
 That's why I was really excited when someone at Tes suggested to have a remote Christmas party.
 It was so much fun! I wrote a blog post about it for the Tes Engineering blog.
-Here [it is](https://engineering.tes.com/post/remote-christmas-party/).
+[Read the post on the Tes engineering blog](https://engineering.tes.com/post/remote-christmas-party/).
