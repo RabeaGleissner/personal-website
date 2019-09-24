@@ -10,7 +10,7 @@ export default ({ data }) => {
     <Layout>
       <div className="article-index">
         <header className="article-index-header">
-          <h1 className="article-index-title article-index-title-blog">Blost posts</h1>
+          <h1 className="article-index-title article-index-title-blog">Blog posts</h1>
         </header>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostPreview node={node} />
