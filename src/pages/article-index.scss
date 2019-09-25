@@ -30,3 +30,56 @@
     border-color: transparent transparent transparent $tilColour;
   }
 }
+
+.til-intro {
+  position: relative;
+  text-align: right;
+}
+
+.til-intro-button {
+  &:after {
+    position: absolute;
+    height: 20px;
+    width: 250px;
+    top: 40px;
+    right: -10px;
+    content: '';
+    display: table;
+    background-color: $tilColourLighter;
+    z-index: -1;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    &:after {
+      transition: 0.2s;
+      background-color: $tilColourLighterHover;
+      width: 450px;
+    }
+  }
+}
+
+.til-intro-component {
+  position: absolute;
+  max-width: $layoutMaxWidth;
+  z-index: 1;
+  border: 3px dashed $layoutBorderColour;
+  background-color: white;
+  top: 0;
+  right: -20px;
+}
+
+.til-intro-component-inner {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  background-color: $codeBackgroundColour;
+}
+
+.til-intro-close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
