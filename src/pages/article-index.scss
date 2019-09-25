@@ -47,15 +47,13 @@
     display: table;
     background-color: $tilColourLighter;
     z-index: -1;
-    transition-property: width;
+    transition-property: height;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
   &:hover {
     &:after {
-      transition: 0.2s;
       background-color: $tilColourLighterHover;
-      width: 450px;
     }
   }
 }
@@ -67,19 +65,42 @@
   border: 3px dashed $layoutBorderColour;
   background-color: white;
   top: 0;
-  right: -20px;
 }
 
 .til-intro-component-inner {
   position: relative;
   text-align: left;
-  padding: 20px;
-  margin: 20px;
+  padding: 15px 10px;
   background-color: $codeBackgroundColour;
 }
 
 .til-intro-close-button {
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 30px;
+}
+
+.til-intro-close-button-mobile {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+}
+
+@media only screen and (min-width:750px) {
+  .til-intro-component {
+    right: -20px;
+  }
+
+  .til-intro-component-inner {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .til-intro-close-button {
+    top: 20px;
+  }
+
+  .til-intro-close-button-mobile {
+    display: none;
+  }
 }

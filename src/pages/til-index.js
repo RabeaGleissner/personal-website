@@ -8,7 +8,6 @@ import './article-index.scss'
 
 export default ({ data }) => {
   const [showIntro, setShowIntro] = useState(false);
-  console.log('showIntro', showIntro);
   return (
     <Layout>
       <div className="article-index">
@@ -21,7 +20,11 @@ export default ({ data }) => {
               <p className="til-intro-button-link">What's this all about then?</p>
             </div>
           </button>
-          {showIntro && <TilIntro closeIntro={() => setShowIntro(false)} />}
+          {showIntro && <TilIntro closeIntro={() => {
+            setShowIntro(false)
+            window.scrollTo(0, 0)
+          }
+          }/>}
         </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostPreview node={node} />

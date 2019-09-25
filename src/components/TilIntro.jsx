@@ -29,6 +29,11 @@ export default ({ closeIntro }) => {
           I'm making this public to encourage myself to write more.
           External motivation drives me, so the pressure of wanting to keep this going on my website is helping!
         </p>
+        <button onClick={closeIntro}>
+          <div className="til-intro-close-button-mobile">
+            <p className="til-intro-close-button-link">Ok, cool!</p>
+          </div>
+        </button>
     </div>
   </section>
   )
