@@ -91,9 +91,34 @@
     right: -20px;
   }
 
+  .box-right-panel {
+    position: absolute;
+    content: '';
+    width: 35px;
+    top: -18px;
+    right: -38px;
+    height: calc(100% + 3px);
+    border: 3px solid #eee;
+    border-left: none;
+    border-top: none;
+    transform: skewY(-45deg);
+  }
+
   .til-intro-component-inner {
     padding: 20px;
     margin: 20px;
+    &:before {
+      position: absolute;
+      top: -56px;
+      content: '';
+      width: calc(100% + 42px);
+      right: -41px;
+      height: 30px;
+      border: 3px solid $layoutBorderColour;
+      border-bottom: none;
+      transform: skewX(-45deg);
+      z-index: -1;
+    }
   }
 
   .til-intro-close-button {

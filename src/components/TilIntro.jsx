@@ -3,6 +3,7 @@ import React from "react"
 export default ({ closeIntro }) => {
   return (
     <section className="til-intro-component">
+      <div className="box-right-panel"></div>
       <div className="til-intro-component-inner">
         <button onClick={closeIntro}>
           <div className="til-intro-close-button">
