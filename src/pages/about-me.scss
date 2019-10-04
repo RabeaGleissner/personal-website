@@ -1,7 +1,11 @@
 @import './common.scss';
 
+.about-me-intro {
+  margin-bottom: 40px;
+}
+
 .journey-box {
-  border: 3px dashed $layoutBorderColour;
+  border: 2px dashed $layoutBorderColour;
   background-color: white;
   margin-bottom: 10px;
 }
@@ -25,6 +29,29 @@
 }
 
 @media only screen and (min-width:750px) {
+  .about-me-intro-content {
+    border-right: 2px dashed $homeTriangleColour;
+    border-left: 2px dashed $homeTriangleColour;
+  }
+  .about-me-intro-inner {
+    padding: 0 20px;
+  }
+  .my-journey-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .journey-box {
+    max-width: 600px;
+    &:first-child {
+      align-self: flex-start;
+    }
+    &:nth-child(2) {
+      max-width: 700px;
+      align-self: flex-end;
+    }
+  }
+
   .journey-box-inner {
     padding: 20px;
     margin: 20px;
