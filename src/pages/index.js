@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
       <HomepageHeader />
       <section className="writings">
         <div>
-          <h1>Things I wrote</h1>
+          <h1>Things I learnt or thought about</h1>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostPreview extraClasses="homepage" node={node} />
           ))}
@@ -35,7 +35,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
     sort: { fields: [frontmatter___date], order: DESC },
-    limit: 30
+    limit: 60
     ) {
       totalCount
       edges {
