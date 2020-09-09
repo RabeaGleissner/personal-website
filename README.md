@@ -4,7 +4,7 @@ Using a customised version of [Gatsby starter](https://github.com/gatsbyjs/gatsb
 
 ```sh
 npm i
-gatsby develop
+npm run develop
 ```
 
 ## Create new TIL posts with
