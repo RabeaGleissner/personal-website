@@ -1,11 +1,5 @@
 @import '../pages/common.scss';
 
-.wrapper {
-  overflow: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
 .content {
   max-width: $layoutMaxWidth;
   padding: 10px 20px;

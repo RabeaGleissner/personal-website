@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
       <HomepageHeader />
       <section className="writings">
         <div>
-          <h1>Things I learnt or thought about</h1>
+          <h3>Things I learnt or thought about</h3>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostPreview extraClasses="homepage" node={node} key={node.id} />
           ))}

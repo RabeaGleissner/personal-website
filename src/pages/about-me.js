@@ -10,7 +10,7 @@ export default() => {
       <section class="about-me-intro">
           <h1 className="about-me-title">About me</h1>
           <div className="about-me-intro-content">
-          <div class="about-me-intro-inner">
+          <div className="about-me-intro-inner">
             <p>Hello! I'm Rabea. I am a full-stack software engineer based in Singapore.</p>
             <p>I currently work remotely as a JavaScript developer, using React and Node. I also have experience with Ruby, TypeScript, Java and other languages.</p>
             <p>I spent three years working as a consultant at <a href="http://8thlight.com">8th Light</a> in London before making the switch to a product company.</p>
