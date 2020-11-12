@@ -10,7 +10,7 @@ const PostPreview = ({ node, extraClasses }) => {
   const isBlog = tags.includes('blog')
 
   return (
-    <article key={node.id} className={`post-preview ${extraClasses}`}>
+    <article className={`post-preview ${extraClasses}`}>
       <h2 className="post-preview-title">
         <Link to={path}>{title}</Link>
       </h2>

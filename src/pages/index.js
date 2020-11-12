@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
         <div>
           <h1>Things I learnt or thought about</h1>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <PostPreview extraClasses="homepage" node={node} />
+            <PostPreview extraClasses="homepage" node={node} key={node.id} />
           ))}
         </div>
         <div className="read-more">Read more <Link to="/til-index/">Today I learnt</Link> or <Link to="/blog-index/">Blog posts</Link></div>

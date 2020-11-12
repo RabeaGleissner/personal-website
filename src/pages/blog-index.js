@@ -13,7 +13,7 @@ export default ({ data }) => {
           <h1 className="article-index-title article-index-title-blog">Blog posts</h1>
         </header>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <PostPreview node={node} />
+          <PostPreview node={node} key={node.id} />
         ))}
       </div>
     </Layout>
