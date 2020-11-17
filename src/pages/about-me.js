@@ -38,7 +38,7 @@ export default() => {
               <li>Taught advanced TDD at the <a href="https://www.foundersandcoders.com"> Founders &amp; Coders</a> bootcamp</li>
               <li>Presented a talk about TDD at various meetups across the UK and at the <a href="https://www.ministryoftesting.com/dojo/lessons/of-spies-fakes-and-friends-help-your-code-lead-a-double-life-rabea-gleissner">Ministry of Testing conference</a></li>
             </ul>
-            <p><span>2015&ndash;2017</span>Organiser of <a href="https://www.meetup.com/a-of-Code-UK/">Ladies of Code</a>, a monthly tech meetup</p>
+            <p><span>2015&ndash;2017</span>Organiser of <a href="https://www.meetup.com/ladies-of-Code-UK/">Ladies of Code</a>, a monthly tech meetup</p>
             <p><span>2016&ndash;2017</span>Mentored apprentice developers at <a href="https://8thlight.com/"> 8th Light</a></p>
             <p><span>2015&ndash;2016</span>Coach at <a href="https://codebar.io">Codebar</a>, a weekly beginners' programming workshop for minorities in tech</p>
             <p><span>2015</span>Teaching Assistant for the front-end development evening course <a href="https://generalassemb.ly/education/front-end-web-development">General Assembly</a></p>
