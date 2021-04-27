@@ -12,8 +12,8 @@ export default() => {
         <div className="about-me-intro-content">
           <div className="about-me-intro-inner">
             <p>Hello! I'm Rabea. I am a full-stack software engineer based in Singapore.</p>
-            <p>I currently work remotely as a JavaScript developer, using React and Node. I also have experience with Ruby, TypeScript, Java and other languages.</p>
-            <p>I spent three years working as a consultant at <a href="http://8thlight.com">8th Light</a> in London before making the switch to working remotely for a product company.</p>
+            <p>I currently work remotely as a consultant at <a href="https://cogent.co">Cogent</a>.</p>
+            <p>I spent three years working as a consultant at <a href="https://8thlight.com">8th Light</a> in London, then started working remotely for a product company. And now I'm back in consulting.</p>
             <p>This website is a bit of a <Link to="/blog-index/">collection of older and newer blog posts</Link> and <Link to="/til-index/">snippets of things that I learnt</Link>.</p>
           </div>
         </div>
@@ -58,7 +58,8 @@ export default() => {
         <section className="journey-box">
           <div className="journey-box-inner">
             <h3 className="journey-box-title">Working</h3>
-            <p><span>2018&ndash;now</span>Full-stack JavaScript engineer at <a href="https://www.tes.com/">Tes</a></p>
+            <p><span>2021&ndash;now</span>Software engineer at <a href="https://cogent.co/">Cogent</a></p>
+            <p><span>2018&ndash;2021</span>Full-stack JavaScript engineer at <a href="https://www.tes.com/">Tes</a></p>
             <p><span>2015&ndash;2018</span>Software consultant at <a href="https://8thlight.com/">8th Light</a></p>
             <p><span>2015</span>Junior developer at <a href="https://www.dkfindout.com/">Dorling Kindersley</a></p>
           </div>
