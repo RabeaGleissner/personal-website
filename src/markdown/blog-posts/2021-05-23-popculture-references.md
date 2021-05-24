@@ -25,7 +25,7 @@ It can be funny, but is it a good idea if not everyone would understand the joke
 
 ## The speaking car
 
-Recenlty I visited a coding school here in Singapore because I was interested in helping out as an instructor.
+Recently I visited a coding school here in Singapore because I was interested in helping out as an instructor.
 The General Manager talked to me and another potential candidate about the systems that they were using.
 One of them was called "KITT".
 "You know, the speaking car?", he joked - expecting us to know it.
