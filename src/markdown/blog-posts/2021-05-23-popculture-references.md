@@ -76,6 +76,8 @@ It's more important to communicate in a way that everyone understands - even if 
 There are so many other things in our social interactions which can make people feel uncomfortable or excluded, I don't think we need to add pop-culture references on top of that.
 
 
+-.-.-.-.-.-.-.-.
 
-* joking
-** not joking
+\* joking
+
+\** not joking
