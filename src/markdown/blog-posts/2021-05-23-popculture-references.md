@@ -1,6 +1,6 @@
 ---
 date: "2021-05-21"
-title: "Can pop-culture reference be inclusive?"
+title: "Can pop-culture references be inclusive?"
 path: "/blog/popculture-references"
 tags: ["blog"] 
 readTime: 4
