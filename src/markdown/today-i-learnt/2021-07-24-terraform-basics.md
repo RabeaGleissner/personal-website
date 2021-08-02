@@ -13,7 +13,7 @@ Here's what I understand so far...
 
 Terraform is a tool that helps with provisioning servers and infrastructure for deployment.
 
-You tell it which stuff to create and with which configuration. It creates the stuff and you can happily deploy your code.
+You tell it which stuff to create and with which configuration, it does its job and you can happily deploy your code.
 
 You need to deploy your .NET application to Azure?
 Terraform can create the right kind of server with the right software installed on it.
@@ -27,7 +27,7 @@ It means that rather than you as a human going into the Azure portal, clicking t
 So if you need to spin up another server, you can easily just run the same Terraform code again.
 Or if you decide to move from Azure to Digital Ocean, you can... oh wait. No, you can't. You'd have to write a new Terraform file because your current one is all Azure specific.
 
-I've got some experience with Ansible from a long time ago. Terraform is a slightly newer tool. So how is it different?
+I've got some experience with Ansible from a long time ago. So I was trying to relate Terraform to that. Terraform is a slightly newer tool. But how is it different?
 
 ## Imperative vs declarative approach
 
@@ -37,7 +37,7 @@ I'm imagining it a bit like this:
 
 With Ansible you say, please first do an `apt-get update` and then install Node 16 and then install the .NET 5.0 SDK.
 
-And with Terraform you declare that you want an instance that can run Node 16 and .NET 5.0... I don't care how you achieve that, Terraform, just get it done!
+And with Terraform you declare that you want an instance that can run your Node 16 and .NET 5.0 code. And then you say "I don't care how you achieve that, Terraform, just get it done!"
 
 ## The Terraform process
 
@@ -56,7 +56,7 @@ Let's say you had declared that you would like a Ruby environment in a cloud in 
 But you changed that code to say you now  want a .NET environment in Australia.
 When you validate the file, Terraform will tell you that it's going to delete the Ruby server and will create a new .NET server for you in a different cloud.
 
-How does it know what the difference is?
+But how does it know what the difference is?, I hear you ask!
 
 It saves the current state of your infrastructure in a file called `terraform.tfstate`.
 By default it does that on your local machine.
@@ -64,7 +64,7 @@ Chances are that you're working with other developers so you'll probably want to
 It's common to save it in the same place as your infrastructure (e.g. in Azure).
 In your `main.tf` you need to specify that you want to create a Terraform backend and where it should be.
 
-So every time you run a `terraform plan` it's going to look at that state file in the cloud now.
+So every time you (or your CI) run a `terraform plan` it's going to look at that state file in the cloud now.
 
 Once you're happy with the proposed changes, you can then run `terraform apply` to put the plan into action.
 
@@ -72,9 +72,9 @@ If you don't like your infrastructure, you can also `terraform destroy` it.
 
 ## What does a Terraform file look like? 
 
-From what I know so far, you first configure and declare a provider in your `main.tf`. The provider is specific to the cloud hosting service that you're using (e.g. AWS, Azure). I imagine it like a code package that  knows the resources specific to that cloud hosting service. Once you have the provider, you can declare your desire for using the resources that it knows. Then you specify for each resource how you want it to be set up.
+From what I know so far, you first configure and declare a provider in your `main.tf`. The provider is specific to the cloud hosting service that you're using (e.g. AWS, Azure). I imagine it like a code package that  knows the resources specific to that cloud hosting service. Once you have the provider, you can declare your desire for using its resources. Then you specify for each resource how you want it to be set up.
 
-It looks something like this:
+This is what it looks like when you create a resource group on Azure:
 
 ```
 resource "azurerm_resource_group" "my_cool_resource_group" {
