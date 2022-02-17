@@ -1,8 +1,10 @@
 ---
 date: "2021-12-22"
 title: "Default method arguments in C# and compile-time constants"
+
 path: "/til/default-method-arguments-in-c-sharp"
-tags: ["til"]
+tags: ["blog"] 
+readTime: 6
 ---
 
 As in many other languages, it is possible to have default method arguments in C#.
@@ -72,7 +74,7 @@ That way, when reading the test, only the important data would be visible and th
 So I tried to follow the example of the argument for `invitationMessage`, simply defaulting to a value in the method signature.
 That way, the caller could either pass in the date or not.
 
-```
+```java
 private async Task<Invitation> CreateInvitation(
     Guid userId,
     int invitationStatusId,
@@ -204,7 +206,7 @@ Imagine you wanted to call the method with a specific invitation message but you
 
 Having a method signature like in option 1 wouldn't work:
 
-```
+```java
 private async Task<Invitation> CreateInvitation(
     Guid userId,
     int invitationStatusId,
