@@ -84,7 +84,3 @@ If it does, then it's susceptible to clickjacking.
 - [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 - [Same site cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite)
 - [OWASP Clickjacking Defense Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html)
-
-
-<small>I also published this post on the [Tes Engineering Blog](https://engineering.tes.com/post/what-is-currying)</small>
-
