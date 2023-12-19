@@ -12,12 +12,12 @@ export default () => {
         <div className="about-me-intro-content">
           <div className="about-me-intro-inner">
             <p>
-              Hello! My name is Rabea. I am a senior software engineer based in
-              Singapore.
+              Hello! My name is Rabea. I am a software engineer based in
+              Cyprus.
             </p>
             <p>
-              I currently work as a consultant at{" "}
-              <a href="https://cogent.co">Cogent</a>.
+              I currently work as an engineering manager at{" "}
+              <a href="https://www.infinitaslearning.com/">Infinitas Learning</a>.
             </p>
             <p>
               This website is a{" "}
@@ -33,7 +33,11 @@ export default () => {
           <div className="journey-box-inner">
             <h3 className="journey-box-title">Work</h3>
             <p>
-              <span>2021&ndash;now</span>Software engineer at{" "}
+              <span>2022&ndash;now</span>Engineering manager at{" "}
+              <a href="https://www.infinitaslearning.com/">Infinitas Learning</a>
+            </p>
+            <p>
+              <span>2021&ndash;2022</span>Senior software consultant at{" "}
               <a href="https://cogent.co/">Cogent</a>
             </p>
             <p>
@@ -54,16 +58,23 @@ export default () => {
           <div className="journey-box-inner">
             <h3 className="journey-box-title">Teaching and Community</h3>
             <p>
+              <span>2022&ndash;2023</span>Coach at{" "}
+              <a href="https://www.skillerwhale.com/">
+                Skiller Whale
+              </a>
+              , teaching advanced React to experienced engineers.
+            </p>
+            <p>
               <span>2021</span>Instructor at{" "}
               <a href="https://www.lewagon.com/singapore">
-                Le Wagon, Singapore
+                Le Wagon
               </a>
-              , a Ruby on Rails coding bootcamp
+              , a Ruby on Rails bootcamp in Singapore
             </p>
             <p>
               <span>2020</span>Mentor at{" "}
-              <a href="https://www.thinkful.com/">Thinkful</a>, a remote coding
-              bootcamp
+              <a href="https://www.thinkful.com/">Thinkful</a>, a coding
+              bootcamp focusing on JavaScript
             </p>
             <p>
               <span>2018</span>Instructor at{" "}
